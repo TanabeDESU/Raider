@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unborderable", "3laps\Unborderable.csproj", "{A82F5BC0-0C76-498F-84F5-1CD0EA189080}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		LevelDesign|x86 = LevelDesign|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.Debug|x86.ActiveCfg = Debug|x86
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.Debug|x86.Build.0 = Debug|x86
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.LevelDesign|x86.ActiveCfg = LevelDesign|x86
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.LevelDesign|x86.Build.0 = LevelDesign|x86
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.Release|x86.ActiveCfg = Release|x86
+		{A82F5BC0-0C76-498F-84F5-1CD0EA189080}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D06DBAA-C976-4BDB-8B51-2F54C5DAD3F5}
+	EndGlobalSection
+EndGlobal

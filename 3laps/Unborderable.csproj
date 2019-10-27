@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A82F5BC0-0C76-498F-84F5-1CD0EA189080}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_3laps</RootNamespace>
+    <AssemblyName>3laps</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LevelDesign|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\LevelDesign\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS;LevelDesign;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GameEngine\CSVWriter.cs" />
+    <Compile Include="GameEngine\DammyObject.cs" />
+    <Compile Include="GameEngine\Easing.cs" />
+    <Compile Include="GameEngine\GameComponent\ShaderEffectRenderer.cs" />
+    <Compile Include="GameEngine\Image.cs" />
+    <Compile Include="GameEngine\LevelDesignMap.cs" />
+    <Compile Include="GameEngine\MapChip\IMapChip.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip _BottomNeedle.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip _DownStream.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip _TopNeedle.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip _UpStream.cs" />
+    <Compile Include="GameEngine\MapChip\MapChipArray.cs" />
+    <Compile Include="GameEngine\Player.cs" />
+    <Compile Include="GameEngine\Scene\DammyScene.cs" />
+    <Compile Include="GameEngine\Animation.cs" />
+    <Compile Include="GameEngine\GameComponent\Animator.cs" />
+    <Compile Include="GameEngine\Audio.cs" />
+    <Compile Include="GameEngine\GameComponent\AudioPlayer.cs" />
+    <Compile Include="GameEngine\Camera.cs" />
+    <Compile Include="GameEngine\Coroutine.cs" />
+    <Compile Include="GameEngine\CSVReader.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameEngine\GameComponent\GameComponent.cs" />
+    <Compile Include="GameEngine\GameManager.cs" />
+    <Compile Include="GameEngine\GameObject.cs" />
+    <Compile Include="GameEngine\GameObjectManager.cs" />
+    <Compile Include="GameEngine\Input.cs" />
+    <Compile Include="GameEngine\Map.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip _Block.cs" />
+    <Compile Include="GameEngine\MapChip\MapChip_Air.cs" />
+    <Compile Include="GameEngine\Scene\StageDesignScene.cs" />
+    <Compile Include="GameEngine\Scene\TestScene.cs" />
+    <Compile Include="GameEngine\ScreenInformations.cs" />
+    <Compile Include="GameEngine\StageIcon.cs" />
+    <Compile Include="GameEngine\UI\SaveButton.cs" />
+    <Compile Include="GameEngine\UI\EditModeUI.cs" />
+    <Compile Include="GameEngine\UI\IButton.cs" />
+    <Compile Include="GameEngine\UI\IUI.cs" />
+    <Compile Include="GameEngine\UI\MapChipButton.cs" />
+    <Compile Include="GameEngine\UI\PlayButton.cs" />
+    <Compile Include="GameEngine\UI\UIBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameEngine\GameComponent\RectangleCollider.cs" />
+    <Compile Include="GameEngine\Renderer.cs" />
+    <Compile Include="GameEngine\GameComponent\Rigidbody.cs" />
+    <Compile Include="GameEngine\Scene\Scene.cs" />
+    <Compile Include="GameEngine\GameComponent\SpriteRenderer.cs" />
+    <Compile Include="GameEngine\Square.cs" />
+    <Compile Include="GameEngine\Scene\Title.cs" />
+    <Compile Include="GameEngine\Transform.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Shader\AllWhite.fx" />
+    <Content Include="Content\Shader\None.fx" />
+    <Content Include="Content\Shader\ScrewyColors.fx" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

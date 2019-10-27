@@ -1,0 +1,15 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Unbordable/3laps/Content/blockFrame.png","D:/Unbordable/3laps/Content/bin/Windows/blockFrame.xnb","TextureProcessor","Texture2DContent",1595,16469,0.2001904
+"D:/Unbordable/3laps/Content/BottomNeedle.png","D:/Unbordable/3laps/Content/bin/Windows/BottomNeedle.xnb","TextureProcessor","Texture2DContent",1004,16469,0.0019626
+"D:/Unbordable/3laps/Content/ClearText.png","D:/Unbordable/3laps/Content/bin/Windows/ClearText.xnb","TextureProcessor","Texture2DContent",18257,8294485,0.2014619
+"D:/Unbordable/3laps/Content/DownStream.png","D:/Unbordable/3laps/Content/bin/Windows/DownStream.xnb","TextureProcessor","Texture2DContent",935,16469,0.0009964
+"D:/Unbordable/3laps/Content/Ground.png","D:/Unbordable/3laps/Content/bin/Windows/Ground.xnb","TextureProcessor","Texture2DContent",892,16469,0.0009981
+"D:/Unbordable/3laps/Content/saveButton.png","D:/Unbordable/3laps/Content/bin/Windows/saveButton.xnb","TextureProcessor","Texture2DContent",954,16469,0.001996
+"D:/Unbordable/3laps/Content/Shader/AllWhite.fx","D:/Unbordable/3laps/Content/bin/Windows/Shader/AllWhite.xnb","EffectProcessor","CompiledEffectContent",370,700,0.2074739
+"D:/Unbordable/3laps/Content/Shader/None.fx","D:/Unbordable/3laps/Content/bin/Windows/Shader/None.xnb","EffectProcessor","CompiledEffectContent",1842,893,0.0987504
+"D:/Unbordable/3laps/Content/Shader/ScrewyColors.fx","D:/Unbordable/3laps/Content/bin/Windows/Shader/ScrewyColors.xnb","EffectProcessor","CompiledEffectContent",451,1053,0.0717623
+"D:/Unbordable/3laps/Content/TempPlayer.png","D:/Unbordable/3laps/Content/bin/Windows/TempPlayer.xnb","TextureProcessor","Texture2DContent",266,16469,0.0957695
+"D:/Unbordable/3laps/Content/TopNeedle.png","D:/Unbordable/3laps/Content/bin/Windows/TopNeedle.xnb","TextureProcessor","Texture2DContent",1020,16469,0.0019951
+"D:/Unbordable/3laps/Content/uiColor.png","D:/Unbordable/3laps/Content/bin/Windows/uiColor.xnb","TextureProcessor","Texture2DContent",547,89,0.0009973
+"D:/Unbordable/3laps/Content/UpStream.png","D:/Unbordable/3laps/Content/bin/Windows/UpStream.xnb","TextureProcessor","Texture2DContent",938,16469,0.0009972
+"D:/Unbordable/3laps/Content/WhiteBox.png","D:/Unbordable/3laps/Content/bin/Windows/WhiteBox.xnb","TextureProcessor","Texture2DContent",228,16469,0.0019944
