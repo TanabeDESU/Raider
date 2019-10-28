@@ -33,7 +33,6 @@ namespace GameEngine
         public override void Update()
         {
             //毎フレーム呼ばれる処理
-            Easing.ExpoOut(1f,2f,3f,4f);
         }
     }
 }

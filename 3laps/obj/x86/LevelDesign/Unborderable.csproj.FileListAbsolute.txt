@@ -350,3 +350,7 @@ D:\Unbordable\3laps\bin\x86\LevelDesign\Content\DownStream.xnb
 D:\Unbordable\3laps\bin\x86\LevelDesign\Content\TempPlayer.xnb
 D:\Unbordable\3laps\bin\x86\LevelDesign\Content\TopNeedle.xnb
 D:\Unbordable\3laps\bin\x86\LevelDesign\Content\UpStream.xnb
+C:\Users\K019G1014\Documents\Raider\3laps\obj\x86\LevelDesign\Unborderable.csprojAssemblyReference.cache
+C:\Users\K019G1014\Documents\Raider\3laps\obj\x86\LevelDesign\Unborderable.csproj.CoreCompileInputs.cache
+C:\Users\K019G1014\Documents\Raider\3laps\obj\x86\LevelDesign\3laps.exe
+C:\Users\K019G1014\Documents\Raider\3laps\obj\x86\LevelDesign\3laps.pdb
