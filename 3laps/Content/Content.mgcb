@@ -13,6 +13,18 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin BackGround.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:BackGround.png
+
 #begin blockFrame.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -100,11 +112,29 @@
 /processorParam:TextureFormat=Color
 /build:saveButton.png
 
+#begin Shader/AllBlackToInvisible.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:Shader/AllBlackToInvisible.fx
+
 #begin Shader/AllWhite.fx
 /importer:EffectImporter
 /processor:EffectProcessor
 /processorParam:DebugMode=Auto
 /build:Shader/AllWhite.fx
+
+#begin Shader/Blue.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:Shader/Blue.fx
+
+#begin Shader/CircleWarp.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:Shader/CircleWarp.fx
 
 #begin Shader/None.fx
 /importer:EffectImporter
@@ -228,6 +258,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:UpStream.png
+
+#begin warpSample.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:warpSample.png
 
 #begin WhiteBox.png
 /importer:TextureImporter

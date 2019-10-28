@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace GameEngine
 {
-    public class SpriteRenderer : GameComponent//画像の描画
+    public class SpriteRenderer : GameComponent,IRenderer//画像の描画
     {
 
         int drawLayer;//描画順
@@ -164,5 +164,9 @@ namespace GameEngine
             return spriteRenderer;
         }
 
+        public int GetLayerNum()
+        {
+            return DrawLayer;
+        }
     }
 }

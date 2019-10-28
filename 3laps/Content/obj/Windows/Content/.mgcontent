@@ -4,28 +4,38 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/blockFrame.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/BottomNeedle.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/ClearText.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/DownStream.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/Ground.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/MenuImage.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/saveButton.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/Shader/AllWhite.fx</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/Shader/None.fx</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/Shader/ScrewyColors.fx</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/StageIcon_0.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/StageIcon_1.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/StageIcon_2.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/StageIcon_3.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/TempPlayer.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/TitleImage.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/TopNeedle.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/uiColor.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/UpStream.png</File>
-    <File>C:/Users/K019G1014/Documents/Raider/3laps/Content/WhiteBox.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/BackGround.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/blockFrame.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/BottomNeedle.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/ClearText.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/DownStream.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Ground.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/MenuImage.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/saveButton.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/AllBlackToInvisible.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/AllWhite.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/Blue.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/CircleWarp.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/None.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/ScrewyColors.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_0.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_1.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_2.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_3.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/TempPlayer.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/TitleImage.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/TopNeedle.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/uiColor.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/UpStream.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/warpSample.png</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/WhiteBox.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

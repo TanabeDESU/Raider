@@ -33,6 +33,8 @@ namespace GameEngine
             AddComponent(new SpriteRenderer("TempPlayer", transform, 1));
             AddComponent(new RectangleCollider(this, new Square(transform, 64)));
             AddComponent(new Rigidbody(transform, (RectangleCollider)GetComponent("RectangleCollider")));
+            AddComponent(new CircleWarpShaderEffectGenerater(4));
+            AddComponent(new UnderWorldShaderController(0.06f));
             rb = (Rigidbody)GetComponent("Rigidbody");
         }
 
@@ -211,6 +213,8 @@ namespace GameEngine
             }
             if(Input.GetKeyDown(Keys.Space))
             {
+                ((CircleWarpShaderEffectGenerater)gameCompoents["CircleWarpGenerater"]).AddWarp(transform.position, 200, 30, 6);
+                ((UnderWorldShaderController)gameCompoents["UnderWorldShaderController"]).Switch();
                 Drop();
             }
             
