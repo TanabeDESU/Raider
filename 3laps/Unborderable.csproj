@@ -51,10 +51,15 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GameEngine\BackGround.cs" />
     <Compile Include="GameEngine\CSVWriter.cs" />
     <Compile Include="GameEngine\DammyObject.cs" />
     <Compile Include="GameEngine\Easing.cs" />
+    <Compile Include="GameEngine\GameComponent\CircleWarpShaderEffectController.cs" />
+    <Compile Include="GameEngine\GameComponent\CircleWarpShaderEffectGenerater.cs" />
+    <Compile Include="GameEngine\GameComponent\IRenderer.cs" />
     <Compile Include="GameEngine\GameComponent\ShaderEffectRenderer.cs" />
+    <Compile Include="GameEngine\GameComponent\UnderWorldShaderController.cs" />
     <Compile Include="GameEngine\Image.cs" />
     <Compile Include="GameEngine\LevelDesignMap.cs" />
     <Compile Include="GameEngine\MapChip\IMapChip.cs" />
@@ -111,7 +116,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Shader\AllBlackToInvisible.fx" />
     <Content Include="Content\Shader\AllWhite.fx" />
+    <Content Include="Content\Shader\Blue.fx" />
+    <Content Include="Content\Shader\CircleWarp.fx" />
     <Content Include="Content\Shader\None.fx" />
     <Content Include="Content\Shader\ScrewyColors.fx" />
     <Content Include="Icon.ico" />

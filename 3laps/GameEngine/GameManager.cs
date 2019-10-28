@@ -17,7 +17,7 @@ namespace GameEngine
         public static Random random = new Random();
 
         public static GameManager instance = new GameManager();
-
+        RenderTarget2D renderTarget;
         public static int timeCount;
 
         public GameManager()
@@ -30,6 +30,7 @@ namespace GameEngine
         {
             nowScene = scene;
             nowScene.Load();
+            renderTarget = new RenderTarget2D(Renderer.instance.graphicsDevice, ScreenInformations.ScreenWidth, ScreenInformations.ScreenHeight);
         } 
 
         public void GameUpdate()//毎フレーム行う処理
@@ -38,10 +39,12 @@ namespace GameEngine
         }
         public void GameDraw()//描画処理
         {
-            Renderer.instance.Begin();
-            Renderer.instance.DrawObjects();
-            Renderer.instance.End();
 
+            //Renderer.instance.Begin();
+            Renderer.instance.DrawObjects();
+            //Renderer.instance.End();
+            Renderer.instance.ScreenDraw(renderTarget);
+            Renderer.instance.ShadersReload();
 
         }
 

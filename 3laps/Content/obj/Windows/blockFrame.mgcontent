@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Unbordable/3laps/Content/blockFrame.png</SourceFile>
-  <SourceTime>2019-10-24T17:09:46.4308356+09:00</SourceTime>
-  <DestFile>D:/Unbordable/3laps/Content/bin/Windows/blockFrame.xnb</DestFile>
-  <DestTime>2019-10-25T11:33:09.0307589+09:00</DestTime>
+  <SourceFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/blockFrame.png</SourceFile>
+  <SourceTime>2019-10-29T00:23:08.5718684+09:00</SourceTime>
+  <DestFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/bin/Windows/blockFrame.xnb</DestFile>
+  <DestTime>2019-10-29T00:32:15.6629868+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

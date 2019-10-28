@@ -29,6 +29,7 @@ namespace GameEngine
 #endif
             gameObjectManager.Instantiate(new Camera(new Transform(new Vector2(0, 31)), 1, true));
             gameObjectManager.Instantiate(new Player(new Transform()));
+            gameObjectManager.Instantiate(new BackGround());
         }
 
         public override void UnLoad()

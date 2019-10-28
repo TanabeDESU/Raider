@@ -42,7 +42,7 @@ namespace _3laps
 #if LevelDesign
             GameManager.instance.GameStart(new StageDesignScene());
 #else
-            GameManager.instance.GameStart(new DammyScene());
+            GameManager.instance.GameStart(new TestScene());
 #endif
             base.Initialize();
         }
