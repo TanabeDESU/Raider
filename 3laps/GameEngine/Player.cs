@@ -33,7 +33,7 @@ namespace GameEngine
             AddComponent(new SpriteRenderer("TempPlayer", transform, 1));
             AddComponent(new RectangleCollider(this, new Square(transform, 64)));
             AddComponent(new Rigidbody(transform, (RectangleCollider)GetComponent("RectangleCollider")));
-            AddComponent(new CircleWarpShaderEffectGenerater(4));
+            AddComponent(new CircleWarpShaderEffectGenerater());
             AddComponent(new UnderWorldShaderController(0.06f));
             AddComponent(new ConcentratedLineShaderController(4));
             AddComponent(new ConcentratedLineShaderController(0));
@@ -215,7 +215,7 @@ namespace GameEngine
             }
             if(Input.GetKeyDown(Keys.Space))
             {
-                ((CircleWarpShaderEffectGenerater)gameCompoents["CircleWarpGenerater"]).AddWarp(transform.position, 200, 30, 6);
+                ((CircleWarpShaderEffectGenerater)gameCompoents["CircleWarpGenerater"]).AddWarp(transform.position, 200, 30, 6,4);
                 ((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController"]).On(0.5f, 0.5f, 0.06f);
                 ((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController1"]).On(0.5f, 0.5f, 0.06f);
                 Drop();
