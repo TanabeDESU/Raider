@@ -16,7 +16,7 @@ namespace GameEngine
             alpha = 0;
             isUnder = false;
             pase = changePase;
-            changeDirection = 1;
+            changeDirection = -1;
         }
         public override GameComponent Clone(GameObject obj)
         {

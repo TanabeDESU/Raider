@@ -32,7 +32,7 @@ float4 MainPS(VertexShaderOutput input) : COLOR
 	float4 output = tex2D(SpriteTextureSampler,input.TextureCoordinates);
 	//output.r *= 0.5f;
 	output.a *= 0.2;
-	input.TextureCoordinates.x += sin(radians(input.TextureCoordinates.y * 360 - start)) *range;
+	input.TextureCoordinates.x += -sin(radians(input.TextureCoordinates.y * 360 +start)) *range;
 
 	float4 effect = tex2D(WarpTextureSampler, input.TextureCoordinates);
 	effect.a = 1;

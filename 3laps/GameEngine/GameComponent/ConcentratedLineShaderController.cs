@@ -53,11 +53,22 @@ namespace GameEngine
         }
         public override void Update()
         {
-            if (isOn&&!(radius <= minRadius || radius > maxRadius)) ParamUpdate();
+            if (isOn) ParamUpdate();
+            if (radius < minRadius)
+            {
+                radius = minRadius;
+                d *= -2;
+            }
+            if (radius > maxRadius)
+            {
+                radius = maxRadius;
+                d = 1;
+                isOn = false;
+            }
         }
         public void ParamUpdate()
         {
-            alpha += maxAlpha / ((maxRadius-minRadius) / pase) * d;
+            alpha += pase * d;
             radius -= pase*d;
             Renderer.instance.AddEffectList(this);
         }

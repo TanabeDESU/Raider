@@ -20,7 +20,7 @@ namespace GameEngine
         EditModeUI editModeUI;
         public StageDesignScene()
         {
-            camera = gameObjectManager.Instantiate(new Camera(new Transform(new Vector2(-32, -28)), 1));
+            camera = gameObjectManager.Instantiate(new Camera(new Transform(new Vector2(-32, -28)), 1,true));
             editModeUI = new EditModeUI(this);
         }
         public override Scene Clone()

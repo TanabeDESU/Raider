@@ -52,7 +52,7 @@ namespace GameEngine
             LoadEffect("Blur");
             shaderEffects["Blue"].Parameters["warp"].SetValue(textures["warpSample"]);
             shaderEffects["SinWarpAlpha"].Parameters["warp"].SetValue(textures["warpSample"]);
-            shaderEffects["Blur"].Parameters["warp"].SetValue(textures["shutyuSample"]);
+            //shaderEffects["Blur"].Parameters["warp"].SetValue(textures["shutyuSample"]);
             screenEffect = shaderEffects["Blue"];
             currentEffect = shaderEffects["None"];
             defaultEffect = shaderEffects["SinWarpAlpha"];
