@@ -10,10 +10,10 @@ namespace GameEngine
     public class CircleWarpShaderEffectGenerater : GameComponent
     {
         List<CircleWarpShaderEffectController> circleWarps;
-        int layer;
-        public CircleWarpShaderEffectGenerater(int layerNum)
+        //int layer;
+        public CircleWarpShaderEffectGenerater()
         {
-            layer = layerNum;
+            //layer = layerNum;
             circleWarps = new List<CircleWarpShaderEffectController>();
         }
         public override GameComponent Clone(GameObject obj)
@@ -29,7 +29,7 @@ namespace GameEngine
         {
             return "CircleWarpGenerater";
         }
-        public void AddWarp(Vector2 pos,float maxRadius,float thickness,float pase,float firstRadius=0)
+        public void AddWarp(Vector2 pos,float maxRadius,float thickness,float pase,int layer,float firstRadius=0)
         {
             CircleWarpShaderEffectController newWarp= new CircleWarpShaderEffectController(maxRadius,thickness,pase,firstRadius,layer);
             newWarp.SetCenterPosition(pos);
@@ -37,8 +37,6 @@ namespace GameEngine
         }
         public override void Update()
         {
-            if (Input.IsMouseLButtonDown())
-                AddWarp(Input.GetMousePosition(), 200, 32, 6);
             circleWarps.RemoveAll(cw => !cw.isPlay);
             circleWarps.ForEach(cw => cw.Update());
         }
