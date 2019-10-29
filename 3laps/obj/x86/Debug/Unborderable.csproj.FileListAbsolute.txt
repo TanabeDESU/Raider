@@ -419,3 +419,6 @@ D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\SharpDX.Dir
 D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\SharpDX.XInput.xml
 D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\obj\x86\Debug\Unborderable.csproj.CopyComplete
+D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\Content\Shader\SinWarpAlpha.xnb
+D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\Content\Shader\Blur.xnb
+D:\K019G1120\1st\MonoGame\raider2\Raider\3laps\bin\Windows\x86\Debug\Content\shutyuSample.xnb

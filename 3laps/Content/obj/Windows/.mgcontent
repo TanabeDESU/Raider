@@ -18,6 +18,8 @@
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/CircleWarp.fx</File>
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/None.fx</File>
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/ScrewyColors.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/SinWarpAlpha.fx</File>
+    <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/shutyuSample.png</File>
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_0.png</File>
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_1.png</File>
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/StageIcon_2.png</File>
@@ -31,6 +33,8 @@
     <File>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/WhiteBox.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

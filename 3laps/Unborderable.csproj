@@ -57,6 +57,7 @@
     <Compile Include="GameEngine\Easing.cs" />
     <Compile Include="GameEngine\GameComponent\CircleWarpShaderEffectController.cs" />
     <Compile Include="GameEngine\GameComponent\CircleWarpShaderEffectGenerater.cs" />
+    <Compile Include="GameEngine\GameComponent\ConcentratedLineShaderController.cs" />
     <Compile Include="GameEngine\GameComponent\IRenderer.cs" />
     <Compile Include="GameEngine\GameComponent\ShaderEffectRenderer.cs" />
     <Compile Include="GameEngine\GameComponent\UnderWorldShaderController.cs" />
@@ -119,9 +120,11 @@
     <Content Include="Content\Shader\AllBlackToInvisible.fx" />
     <Content Include="Content\Shader\AllWhite.fx" />
     <Content Include="Content\Shader\Blue.fx" />
+    <Content Include="Content\Shader\Blur.fx" />
     <Content Include="Content\Shader\CircleWarp.fx" />
     <Content Include="Content\Shader\None.fx" />
     <Content Include="Content\Shader\ScrewyColors.fx" />
+    <Content Include="Content\Shader\SinWarpAlpha.fx" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@ namespace GameEngine
         {
             transform = new Transform(new Vector2(ScreenInformations.ScreenWidth / 2, ScreenInformations.ScreenHeight / 2), 0, 
                 new Vector2(ScreenInformations.ScreenWidth, ScreenInformations.ScreenHeight));
-            AddComponent(new SpriteRenderer("BackGround",transform,0));
+            AddComponent(new ShaderEffectRenderer("BackGround",transform,0,"None"));
         }
         public override GameObject Clone()
         {

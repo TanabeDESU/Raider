@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/Shader/None.fx</SourceFile>
-  <SourceTime>2019-10-29T00:23:08.3464896+09:00</SourceTime>
+  <SourceTime>2019-10-29T10:59:33.6496421+09:00</SourceTime>
   <DestFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/bin/Windows/Content/Shader/None.xnb</DestFile>
-  <DestTime>2019-10-29T00:40:29.821031+09:00</DestTime>
+  <DestTime>2019-10-29T10:59:34.717787+09:00</DestTime>
   <Importer>EffectImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>EffectProcessor</Processor>

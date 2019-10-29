@@ -43,14 +43,19 @@ namespace GameEngine
             mainRenderTarget = new RenderTarget2D(graphicsDevice, ScreenInformations.ScreenWidth, ScreenInformations.ScreenHeight);
             spriteBatch = new SpriteBatch(graphicsDevice);
             LoadContent("warpSample");
+            LoadContent("shutyuSample");
             LoadEffect("Blue");
             LoadEffect("None");
             LoadEffect("CircleWarp");
             LoadEffect("AllBlackToInvisible");
+            LoadEffect("SinWarpAlpha");
+            LoadEffect("Blur");
             shaderEffects["Blue"].Parameters["warp"].SetValue(textures["warpSample"]);
+            shaderEffects["SinWarpAlpha"].Parameters["warp"].SetValue(textures["warpSample"]);
+            shaderEffects["Blur"].Parameters["warp"].SetValue(textures["shutyuSample"]);
             screenEffect = shaderEffects["Blue"];
             currentEffect = shaderEffects["None"];
-            defaultEffect = shaderEffects["Blue"];
+            defaultEffect = shaderEffects["SinWarpAlpha"];
             shaderParam.rangeDelta = 1;
             renderEffects = new List<IRenderer>();
         }
@@ -125,19 +130,7 @@ namespace GameEngine
         {
             spriteBatch.End();
         }
-
-        public void SetCircleWarpPosition(Vector2 pos)
-        {
-            shaderEffects["CircleWarp"].Parameters["circlePosition"].SetValue(new Vector2(pos.X / ScreenInformations.ScreenWidth, pos.Y / ScreenInformations.ScreenHeight));
-        }
-        public void SetCircleWarpThickness(float thickness)
-        {
-            shaderEffects["CircleWarp"].Parameters["thickness"].SetValue(thickness);
-        }
-        public void SetCircleWarpRadius(float radius)
-        {
-            shaderEffects["CircleWarp"].Parameters["radius"].SetValue(radius);
-        }
+        
         public void DrawTexture(string assetName, Vector2 position)
         {
             Debug.Assert(textures.ContainsKey(assetName),
@@ -198,23 +191,21 @@ namespace GameEngine
         }
         public void DrawTexture(string assetName, Vector2 position, Rectangle rectangle, Color color, float rotation, Vector2 origin, Vector2 scall, SpriteEffects effects, float layerDepth, string effectName)
         {
-            var se = shaderEffects[effectName].Clone();
+            var se = shaderEffects[effectName];
             CheckShaderEffect(se);
             //shaderEffects[effectName].Parameters["delta"].SetValue((0.1f));
             Debug.Assert(textures.ContainsKey(assetName),
                 "描画時にアセット名の名前を間違えたか、画像の読み込み自体できていません。");
             spriteBatch.Draw(textures[assetName], position, rectangle, color, rotation, origin, scall, effects, layerDepth);
-            se.Dispose();
         }
         public void ScreenDraw(Texture2D Screen)
         {
-            if (screenEffect == shaderEffects["Blue"]) SinWarpRenderer(ref shaderParam);
             graphicsDevice.SetRenderTarget(null);
-            var se = screenEffect.Clone();
+            var se = screenEffect;
             Begin(se);
             spriteBatch.Draw(mainRenderTarget, new Vector2(0, 0), Color.White);
             End();
-            se.Dispose();
+            
         }
         public void SinWarpRenderer(ref WarpShaderParam shaderParam)
         {
@@ -222,8 +213,12 @@ namespace GameEngine
             if (shaderParam.start > 360) shaderParam.start = 0;
             shaderParam.range += 0.01f * shaderParam.rangeDelta;
             if (shaderParam.range > 0.05f || shaderParam.range < -0.05f) shaderParam.rangeDelta *= -1;
-            screenEffect.Parameters["start"].SetValue(shaderParam.start);
-            screenEffect.Parameters["range"].SetValue(shaderParam.range);
+            shaderEffects["Blue"].Parameters["start"].SetValue(shaderParam.start);
+            shaderEffects["Blue"].Parameters["range"].SetValue(shaderParam.range);
+            shaderEffects["SinWarpAlpha"].Parameters["start"].SetValue(shaderParam.start);
+            shaderEffects["SinWarpAlpha"].Parameters["range"].SetValue(shaderParam.range);
+            shaderEffects["Blue"].Parameters["warp"].SetValue(textures["warpSample"]);
+
         }
         public void DrawEffect(string effectName, int layer)
         {
@@ -234,20 +229,24 @@ namespace GameEngine
             graphicsDevice.SetRenderTarget(newScreen);
             graphicsDevice.Clear(Color.Black);
             //End();
-            var se = shaderEffects[effectName].Clone();
+            var se = shaderEffects[effectName];
             Begin(se);
             spriteBatch.Draw(screen, new Vector2(0, 0), Color.White);
             End();
 
-            se.Dispose();
+            //se.Dispose();
 
             renderTargets[layer].Dispose();
             renderTargets[layer] = newScreen;
 
         }
-        public void SetShaderParameter(string shaderName,string parameterName,float value)
+        public void SetShaderParameter(string shaderName, string parameterName, float value)
         {
             shaderEffects[shaderName].Parameters[parameterName].SetValue(value);
+        }
+        public void SetShaderParameter(string shaderName, string parameterName,Vector2 value)
+        {
+            shaderEffects[shaderName].Parameters[parameterName].SetValue(new Vector2(value.X / ScreenInformations.ScreenWidth, value.Y / ScreenInformations.ScreenHeight));
         }
         public void SetRenderTargets(RenderTarget2D target)
         {
@@ -274,6 +273,8 @@ namespace GameEngine
         }
         public void DrawObjects()
         {
+            //if (screenEffect == shaderEffects["Blue"])
+                SinWarpRenderer(ref shaderParam);
 
             for (int i = 0; i < drawLists.Length; i++)
             {

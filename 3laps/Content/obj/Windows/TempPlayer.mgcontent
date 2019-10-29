@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/TempPlayer.png</SourceFile>
-  <SourceTime>2019-10-29T00:23:08.3544349+09:00</SourceTime>
+  <SourceTime>2019-10-29T00:53:13.4656257+09:00</SourceTime>
   <DestFile>D:/K019G1120/1st/MonoGame/raider2/Raider/3laps/Content/bin/Windows/TempPlayer.xnb</DestFile>
-  <DestTime>2019-10-29T00:32:17.6082215+09:00</DestTime>
+  <DestTime>2019-10-29T09:39:12.9125261+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

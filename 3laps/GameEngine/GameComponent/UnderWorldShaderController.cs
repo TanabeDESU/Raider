@@ -53,6 +53,7 @@ namespace GameEngine
         public void SetShaderParam()
         {
             Renderer.instance.SetShaderParameter("Blue", "alpha", alpha);
+            Renderer.instance.SetShaderParameter("SinWarpAlpha", "alpha", alpha);
         }
         public override void Update()
         {

@@ -35,6 +35,11 @@ namespace GameEngine
             AddComponent(new Rigidbody(transform, (RectangleCollider)GetComponent("RectangleCollider")));
             AddComponent(new CircleWarpShaderEffectGenerater(4));
             AddComponent(new UnderWorldShaderController(0.06f));
+            //AddComponent(new ConcentratedLineShaderController(4));
+            //AddComponent(new ConcentratedLineShaderController(3));
+            //AddComponent(new ConcentratedLineShaderController(2));
+            //AddComponent(new ConcentratedLineShaderController(1));
+            //AddComponent(new ConcentratedLineShaderController(0));
             rb = (Rigidbody)GetComponent("Rigidbody");
         }
 
@@ -215,6 +220,10 @@ namespace GameEngine
             {
                 ((CircleWarpShaderEffectGenerater)gameCompoents["CircleWarpGenerater"]).AddWarp(transform.position, 200, 30, 6);
                 ((UnderWorldShaderController)gameCompoents["UnderWorldShaderController"]).Switch();
+                //((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController"]).On(0.5f, 0.5f, 0.06f);
+                //((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController2"]).On(0.5f, 0.5f, 0.06f);
+                //((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController3"]).On(0.5f, 0.5f, 0.06f);
+                //((ConcentratedLineShaderController)gameCompoents["ConcentratedLineShaderController4"]).On(0.5f, 0.5f, 0.06f);
                 Drop();
             }
             

@@ -58,9 +58,9 @@ namespace GameEngine
         }
         private void SetEffect()
         {
-            Renderer.instance.SetCircleWarpPosition(circlePos-Renderer.instance.camera.transform.position);
-            Renderer.instance.SetCircleWarpRadius(radius / ScreenInformations.ScreenHeight);
-            Renderer.instance.SetCircleWarpThickness(thickness / ScreenInformations.ScreenHeight);
+            Renderer.instance.SetShaderParameter("CircleWarp", "circlePosition", circlePos -Renderer.instance.camera.transform.position);
+            Renderer.instance.SetShaderParameter("CircleWarp", "radius", radius / ScreenInformations.ScreenHeight);
+            Renderer.instance.SetShaderParameter("CircleWarp","thickness", thickness / ScreenInformations.ScreenHeight);
         }
 
         public void Draw()
